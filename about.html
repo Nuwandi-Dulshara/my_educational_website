@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BRAINWAVE -About</title>
+ 
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  
+  <style>
+  body{
+    background-color: rgb(244, 229, 156);
+  }
+  .navbar-nav .nav-item {
+    background-color: rgb(202, 234, 222);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size:x-large; 
+    font-weight: 300;
+    text-align: center;
+    margin-left: 30px;
+    color:black;
+    
+  }
+
+  .mt-5 {
+    margin-top: 50px; 
+  }
+   
+  .about{
+    text-align: center;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: bold;
+  }
+
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <img src="image/logo.png" class="rounded float-start" with="75px" height="75px" alt="logo">
+      <h1 class="navbar-brand-lg" href="#" > BRAINWAVE </h1>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto ">
+          <li class="nav-item ">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="course.html">Courses</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+
+  <div class="row mt-5">
+    <div class="col-md-6">
+      <br>
+      <img src="image/about.jpg" alt="Image" class="img-fluid" width="120%" height="120%">
+    </div>
+    <div class="col-md-6">
+    <h1 class="about">ABOUT US</h1>
+    
+    <p>Welcome to BRAINWAVE educational web site, your trusted online platform for educational resources and learning opportunities!
+    
+      At BRAINWAVE, we are dedicated to providing high-quality educational content to learners of all ages and backgrounds. Whether you're a student looking to enhance your skills, a teacher seeking innovative teaching resources, or a lifelong learner eager to explore new topics, we have something for everyone.
+      
+      Our mission is to make learning accessible, engaging, and enjoyable for all. Through our curated collection of articles, tutorials, videos, and interactive lessons, we strive to empower individuals to reach their full potential and pursue their academic and professional goals.
+      
+      From mathematics to literature, science to history, and everything in between, [Website Name] covers a wide range of subjects to cater to diverse interests and learning styles. Our team of experts works tirelessly to ensure that our content is accurate, up-to-date, and relevant to today's educational landscape.
+      
+      Join us on this journey of discovery and lifelong learning. Whether you're taking your first steps into a new subject or diving deep into advanced topics, [Website Name] is here to support you every step of the way.
+      
+      Thank you for choosing BRAINWAVE as your partner in education. Together, let's unlock the power of knowledge and transform lives through learning.</p>
+    </div>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+ 
+  $(document).ready(function() {
+    $('.navbar-nav .nav-link').on('click', function() {
+      $('.navbar-nav').find('.active').removeClass('active');
+      $(this).addClass('active');
+    });
+  });
+</script>
+</body>
+</html>
